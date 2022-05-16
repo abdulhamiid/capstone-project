@@ -33,8 +33,9 @@
 }
 
 .container {
-  width: 85%;
+  width: 90%;
   margin: auto;
+  text-align: center;
 }
 
 body {
