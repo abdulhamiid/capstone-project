@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #272a31;
+  --secondary-color: #ec5242;
+  --ash-color: #d3d3d3;
+}
+
+.flex  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--primary-color);
+}
+#main-header {
+  background-image: url(images/red-sneekers.jpg.crdownload);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 140%;
+  height: 70px;
+}
+
+nav {
+  z-index: 2;
+  background-color: #fff;
+  /* opacity: 0.9; */
+  height: 70px;
+  padding: 15px 25px;
+}
+
+.menu {
+  width: 30px;
+
+}
+
+.hamburger {
+  width: 100%;
+  height: 5px;
+  margin: 2px 0;
+  background-color: var(--primary-color);
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.nav-list {
+  position: absolute;
+  background-color: var(--primary-color);
+  font-size: 20px;
+  padding: 60px 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+#close {
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  list-style: none;
+  border-radius: 50%;
+}
+
+#close:hover {
+  background-color: var(--secondary-color);
+  transition: 0.7s;
+  cursor: pointer;
+  color: #fff;
+}
+
+.nav-list li {
+  padding: 15px;
+  border-bottom: 1px solid var(--secondary-color);
+  list-style: none;
+}
+
+.nav-list li a:hover {
+  color: var(--ash-color);
+}
+
+.nav-list li:last-child {
+  border-bottom: none;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#showcase {
+  background-position: bottom center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 70px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#showcase p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+#showcase .description {
+  padding: 15px;
+  border: 3px solid #fff;
+  margin: 10px;
+}
+
+
+#stock {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 30px 0;
+}
+
+#stock > ul {
+  margin-top: 30px;
+  width: 90%
+}
+
+#stock div {
+  padding: 10px;
+  background-color: rgb(73, 72, 72);
+  gap: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  justify-content: space-between;
+}
+
+hr {
+  width: 30px;
+  background-color: var(--secondary-color);
+  height: 1px;
+  margin: 5px auto 0 auto;
+  border: none;
+}
+
+#stock img {
+  width: 80px;
+  height: 60px;
+}
+
+#stock p,
+#stock h3 {
+  color: #fff;
+}
+
+#stock .title {
+  color: var(--secondary-color);
+}
+
+#stock .description {
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  width: 50%;
+}
+
+#stock .btn {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  text-decoration: none;
+}
+
+#cart {
+  margin: 30px 0;
+}
+
+#cart .btn {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  padding: 15px;
+  width: 90%;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid var(--ash-color);
+  color: var(--primary-color);
+}
+
+#cart .bi-chevron-down::before {
+  color: var(--secondary-color);
+  font-weight: 700 !important;
+}
