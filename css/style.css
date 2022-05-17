@@ -25,8 +25,9 @@
   align-items: center;
 }
 
-.active {
+#active {
   color: var(--secondary-color);
+  font-weight: 600;
 }
 
 .hide {
@@ -267,11 +268,15 @@ footer{
   padding: 50px;
   background-color: var(--primary-color);
   text-align: center;
-
 }
+
+footer > ul {
+  margin-top: 30px;
+}
+
 footer p {
   color: var(--ash-color);
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 
@@ -314,7 +319,6 @@ footer > ul img:hover {
     text-decoration: none;
     color: var(--primary-color);
     gap: 5px;
-    /* font-weight: bold; */
   }
 
   #main-header {
