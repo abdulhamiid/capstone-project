@@ -262,6 +262,41 @@ hr {
   font-weight: 700 !important;
 }
 
+footer{
+  width: 100%;
+  padding: 50px;
+  background-color: var(--primary-color);
+  text-align: center;
+
+}
+footer p {
+  color: var(--ash-color);
+  margin-bottom: 30px;
+}
+
+
+footer > ul img {
+  height: auto;
+  margin: 0 30px;
+}
+
+footer > ul img:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+.fb {
+  width: 50px;
+  margin-right: 35px;
+}
+
+.twitter {
+  width: 80px;
+}
+
+.linkedin {
+  width: 60px;
+}
+
 .logo {
   display: none;
 }
@@ -273,6 +308,13 @@ hr {
 
   .logo {
     display: block;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    gap: 5px;
+    /* font-weight: bold; */
   }
 
   #main-header {

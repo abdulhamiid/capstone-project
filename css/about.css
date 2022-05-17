@@ -44,6 +44,35 @@
   color: #fff;
   font-size: 16px;
 }
+
+footer{
+  width: 100%;
+  padding: 50px;
+  background-color: var(--primary-color);
+  text-align: center;
+
+}
+footer p {
+  color: var(--ash-color);
+  margin-bottom: 20px;
+}
+
+
+footer > div img {
+  height: auto;
+  margin: 0 30px;
+}
+.fb {
+  width: 50px;
+}
+
+.twitter {
+  width: 80px;
+}
+
+.linkedin {
+  width: 60px;
+}
 .d-mobile {
   display: block;
 }
@@ -68,6 +97,16 @@
   .logo {
     display: block;
   }
+
+  .logo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    gap: 5px;
+    /* font-weight: bold; */
+  }
   
   #showcase .description {
     background-color: #fff;
@@ -83,4 +122,32 @@
   #showcase p {
     font-size: 20px;
   }
+
+  .agenda {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    gap: 20px;
+  }
+
+  .hero > div:hover {
+    background-color: rgba(236, 82, 66, 0.4);
+    transition: 0.4s;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .hr {
+    width: 100%;
+    background-color: var(--ash-color);
+    margin: 50px 0;
+  }
+
+  .box {
+    width: 40%;
+    padding: 50px;
+  }
+
+
+
+  
 }
