@@ -42,18 +42,26 @@ body {
   font-family: 'Inter', sans-serif;
   color: var(--primary-color);
 }
-#main-header {
-  background-image: url(images/red-sneekers.jpg.crdownload);
-  background-repeat: no-repeat;
+
+#main-section > div {
+  background-image: url(../images/suleymaniye-mosque.jpg);
   background-position: center center;
-  background-size: 140%;
-  height: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: auto;
+}
+
+#main-section > div > div {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--primary-color);
 }
 
 nav {
-  z-index: 2;
-  background-color: #fff;
-  /* opacity: 0.9; */
   height: 70px;
   padding: 15px 25px;
 }
@@ -124,29 +132,42 @@ nav {
 }
 
 #showcase {
-  background-position: bottom center;
-  background-size: 100%;
-  background-repeat: no-repeat;
   padding-bottom: 70px;
+  text-align: left;
+  width: 90%;
+  margin: auto;
 }
 
 h1 {
+  background-image: url(../images/mosques.webp);
+  background-repeat: repeat;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Steelfish Rg', 'helvetica neue', helvetica, arial, sans-serif;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+  /* text-align: left; */
 }
 
-#showcase p {
+#showcase > p {
+  color: var(--secondary-color);
+}
+
+#showcase .description{
   font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
-}
-
-#showcase .description {
+  color: var(--primary-color);
   padding: 15px;
   border: 3px solid #fff;
-  margin: 10px;
+  width: 100%;
+  margin: 20px 0;
 }
-
 
 #stock {
   background-color: var(--primary-color);
@@ -155,19 +176,25 @@ h1 {
 }
 
 #stock > ul {
-  margin-top: 30px;
-  width: 90%
+  width: 90%;
+  margin: 20px;
 }
 
-#stock div {
-  padding: 10px;
+#stock li {
+  display: grid;
+  grid-template-columns: 20% 30% 45%;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 10px;
   background-color: rgb(73, 72, 72);
-  gap: 10px;
   margin-bottom: 20px;
   text-align: left;
-  justify-content: space-between;
 }
 
+#stock ul li i {
+  font-size: 35px;
+  color: #fff;
+}
 hr {
   width: 30px;
   background-color: var(--secondary-color);
@@ -193,8 +220,6 @@ hr {
 #stock .description {
   font-size: 12px;
   line-height: 1.5;
-  font-weight: 400;
-  width: 50%;
 }
 
 #stock .btn {
