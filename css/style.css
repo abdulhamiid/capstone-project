@@ -66,14 +66,8 @@ body {
   color: var(--primary-color);
 }
 
-nav {
-  height: 70px;
-  padding: 15px 25px;
-}
-
 .menu {
   width: 30px;
-
 }
 
 .hamburger {
@@ -85,6 +79,10 @@ nav {
 
 .menu:hover {
   cursor: pointer;
+}
+
+nav {
+  padding: 40px 30px;
 }
 
 .nav-list {
@@ -264,16 +262,28 @@ hr {
   font-weight: 700 !important;
 }
 
+.logo {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .menu {
     display: none;
   }
 
+  #main-header {
+    background-color: #fff;
+  }
+
   nav {
     display: flex;
+    align-items: center;
+    padding: 10px 0;
     justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
     align-items: flex-end;
-    background-color: #fff;
 
   }
   .logo img{

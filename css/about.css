@@ -12,12 +12,7 @@
   margin-top: 40px;
 }
 
-#showcase .description {
-  background-color: #fff;
-  border: 1px solid var(--ash-color);
-  text-align: center;
-  margin-top: 5px;
-}
+
 
 .section-2,
 .section-3 {
@@ -48,4 +43,44 @@
   height: 100%;
   color: #fff;
   font-size: 16px;
+}
+.d-mobile {
+  display: block;
+}
+
+.dsk {
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+@media (min-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+  
+  .d-mobile {
+    display: none;
+  }
+
+  .dsk,
+  .logo {
+    display: block;
+  }
+  
+  #showcase .description {
+    background-color: #fff;
+    border: 1px solid var(--ash-color);
+    text-align: center;
+    width: 80%;
+    margin-top: 15px;
+    font-style: italic;
+    line-height: 2;
+    padding: 20px;
+  }
+  
+  #showcase p {
+    font-size: 20px;
+  }
 }
