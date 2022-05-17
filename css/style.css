@@ -262,3 +262,121 @@ hr {
   color: var(--secondary-color);
   font-weight: 700 !important;
 }
+
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: #fff;
+
+  }
+  .nav-list {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    background: none;
+    font-size: 13px;
+    padding: 0;
+    height: auto;
+    width: auto;
+  }
+
+  .nav-list li {
+    border-bottom: none;
+    padding: 0 30px;
+  }
+  
+  #close {
+  display: none;
+  }
+  
+  .nav-list li a:hover {
+    color: var(--secondary-color);
+  }
+  
+  .nav-list a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  .showcase-area {
+    height: 100%;
+    
+  }
+
+  #showcase {
+    margin-top: 100px;
+    width: 70%;
+  }
+  #showcase p {
+    font-size: 30px;
+  }
+
+  #showcase h1 {
+    background-image: url(../images/mosques.webp);
+    background-repeat: repeat;
+    background-position: center right;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Steelfish Rg', 'helvetica neue', helvetica, arial, sans-serif;
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #showcase > .description {
+    width: 50%
+  }
+
+  #stock {
+    padding: 50px 0;
+  }
+
+  #stock h3 {
+    margin-bottom: 10px;
+  }
+  #stock ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+    margin-top: 50px;
+    width: 70%;
+  }
+
+  #stock li {
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: 200px;
+  }
+
+  #stock li:hover {
+    border: 2px solid #fff;
+  }
+
+  .btn-more {
+    display: none;
+  }
+
+  #stock .btn {
+    margin: 30px;
+    padding: 0;
+    background: none;
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  #stock .btn:hover {
+    color: var(--ash-color)
+  }
+}
