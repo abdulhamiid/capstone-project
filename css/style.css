@@ -165,6 +165,10 @@ nav {
   margin: 10px 0;
 }
 
+#showcase small {
+  font-size: 14px;
+}
+
 h1 {
   background-image: url(../images/mosques.webp);
   background-repeat: repeat;
@@ -291,6 +295,46 @@ footer {
   display: none;
 }
 
+/* speakers section */
+
+.speaker {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 90%;
+  margin: 30px auto;
+}
+
+.speaker img {
+  width: 100px;
+  box-sizing: border-box;
+  height: 80px;
+  border: 1px solid;
+  box-shadow: 5px 5px 8px var(--primary-color), 10px 10px 8px var(--ash-color);
+}
+
+.speaker h3 {
+  font-size: 15px;
+}
+
+.speaker p {
+  font-size: 10px;
+  font-style: italic;
+  color: var(--secondary-color);
+  line-height: 1.5;
+}
+
+.speaker hr {
+  background-color: var(--ash-color);
+  margin: 10px 0;
+}
+
+.speaker small {
+  font-size: 12px;
+}
+
 @media (min-width: 768px) {
   .menu {
     display: none;
@@ -371,6 +415,10 @@ footer {
 
   #showcase p {
     font-size: 30px;
+  }
+
+  #showcase small {
+    font-size: 17px;
   }
 
   #showcase h1 {
