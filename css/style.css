@@ -30,6 +30,10 @@
   font-weight: 600;
 }
 
+li {
+  list-style: none;
+}
+
 .hide {
   display: none;
 }
@@ -94,6 +98,32 @@ nav {
   padding: 40px 30px;
 }
 
+#top-nav {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 3px 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#top-nav ul {
+  display: flex;
+  align-items: center;
+}
+
+#top-nav a {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#top-nav li {
+  margin: 0 10px;
+}
+
+#top-nav a:hover {
+  color: var(--secondary-color);
+}
 .nav-list {
   position: absolute;
   background-color: var(--primary-color);
@@ -355,6 +385,7 @@ footer {
 
   #main-header {
     background-color: #fff;
+    box-shadow: 0 2px 4px var(--ash-color);
   }
 
   nav {
