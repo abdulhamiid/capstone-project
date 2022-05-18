@@ -49,6 +49,10 @@ body {
   color: var(--primary-color);
 }
 
+#close > div {
+  justify-content: space-between;
+}
+
 #main-section > div {
   background-image: url(../images/suleymaniye-mosque.jpg);
   background-position: center center;
@@ -80,10 +84,6 @@ body {
 
 .menu:hover {
   cursor: pointer;
-}
-
-#close > div {
-  justify-content: space-between;
 }
 
 nav {
@@ -240,7 +240,7 @@ hr {
   color: #fff;
 }
 
-#media .title a{
+#media .title a {
   color: var(--secondary-color);
   text-decoration: none;
 }
