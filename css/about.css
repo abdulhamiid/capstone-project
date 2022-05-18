@@ -91,26 +91,8 @@
   display: none;
 }
 
-#footer {
-  display: block;
-  width: 100%;
-  padding: 50px;
-  background-color: var(--primary-color);
-  text-align: center;
-}
-
-#footer > ul img {
-  height: auto;
-  margin: 0 20px;
-}
-
-#footer > ul {
-  margin-top: 30px;
-}
-
 #footer > p {
   color: var(--ash-color);
-  margin-bottom: 10px;
 }
 
 .fb {
