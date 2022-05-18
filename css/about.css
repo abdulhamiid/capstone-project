@@ -8,7 +8,6 @@
   margin: auto;
 }
 
-
 #showcase {
   text-align: center;
 }
@@ -54,7 +53,6 @@
   width: 100%;
   height: 200px;
   background-repeat: no-repeat;
-  background-repeat:  center center;
   background-size: cover;
   margin: 15px 0 0 0;
 }
@@ -93,7 +91,7 @@
   display: none;
 }
 
-footer{
+#footer {
   display: block;
   width: 100%;
   padding: 50px;
@@ -101,16 +99,16 @@ footer{
   text-align: center;
 }
 
-footer > ul img {
+#footer > ul img {
   height: auto;
   margin: 0 20px;
 }
 
-footer > ul {
+#footer > ul {
   margin-top: 30px;
 }
 
-footer p {
+#footer > p {
   color: var(--ash-color);
   margin-bottom: 10px;
 }
@@ -132,7 +130,7 @@ footer p {
   h1 {
     text-align: center;
   }
-  
+
   .d-mobile {
     display: none;
   }
@@ -144,14 +142,14 @@ footer p {
 
   .logo {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     text-decoration: none;
     color: var(--primary-color);
     gap: 5px;
   }
-  
-  #showcase h1{
+
+  #showcase h1 {
     text-align: center;
   }
 
@@ -165,7 +163,7 @@ footer p {
     line-height: 2;
     padding: 20px;
   }
-  
+
   #showcase p {
     font-size: 20px;
   }
@@ -188,6 +186,7 @@ footer p {
     transform: scale(1.05);
     cursor: pointer;
   }
+
   .hr {
     width: 100%;
     background-color: var(--ash-color);
@@ -200,26 +199,25 @@ footer p {
   }
 
   footer > ul img {
-  height: auto;
-  margin: 0 30px;
-}
+    height: auto;
+    margin: 0 30px;
+  }
 
-footer > ul img:hover {
-  transform: scale(1.2);
-  transition: 0.5s;
-}
+  footer > ul img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+  }
 
   .fb {
     width: 50px;
     margin-right: 35px;
   }
-  
+
   .twitter {
     width: 80px;
   }
-  
+
   .linkedin {
     width: 60px;
   }
-  
 }
