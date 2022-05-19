@@ -5,7 +5,8 @@
 > This project is the Final capstone project of the first module at microverse. It is aim at building responsive UI of an online website for a conference, so in this project I built the home and the about page of the conference page (and readable) on all screens.
 The template I used to create this template was originally designed by [Cindy Shin in Behance.](https://www.behance.net/adagio07)
 
-[![Project explain]](https://www.loom.com/share/fbd0cd5669154c6ca6c16a706afd6227)
+https://user-images.githubusercontent.com/78251927/169259625-a6d25707-e7ba-46ae-bce8-3e700f1e775a.mp4
+
 
 ## Built With
 
