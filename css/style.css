@@ -520,7 +520,7 @@ footer {
   }
 
   #footer > ul {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   #footer p {
@@ -530,13 +530,15 @@ footer {
   }
 
   .social-media img {
-    height: auto;
+    width: 150px;
+    filter: grayscale(100%) contrast(30%);
     margin: 0 30px 30px 30px;
   }
 
   footer > ul img:hover {
-    transform: scale(1.2);
+    filter: grayscale(0%) contrast(100%);
     transition: 0.5s;
+    cursor: pointer
   }
 
   #bs-logo {
