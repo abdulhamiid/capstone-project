@@ -1,0 +1,260 @@
+@import "css/style.css";
+
+.box {
+  background-color: #fff;
+  border: 1px solid var(--ash-color);
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+}
+
+#showcase {
+  text-align: center;
+}
+
+#showcase .title {
+  margin-top: 20px;
+}
+
+#account-section {
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+#account-section p {
+  font-size: 15px;
+}
+
+.shukr {
+  font-size: 18px;
+}
+
+.section-1 > .box {
+  margin-top: 30px;
+}
+
+#section-2,
+.section-3 {
+  margin: 20px auto 20px auto;
+}
+
+#section-2 p {
+  margin-top: 15px;
+}
+
+.agenda {
+  width: 90%;
+  margin: 50px auto;
+  gap: 20px;
+}
+
+.agenda > div {
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 15px 0 0 0;
+}
+
+.h-1 {
+  background-image: url(../images/pcm.jpg);
+}
+
+.h-2 {
+  background-image: url(../images/ps.jpg);
+}
+
+.hr {
+  display: none;
+}
+
+.agenda > div > div {
+  background-color: rgba(236, 82, 66, 0.8);
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 16px;
+}
+
+.d-mobile,
+.hr {
+  display: block;
+}
+
+.dsk {
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+
+#footer {
+  display: block;
+  width: 100%;
+  padding-top: 50px;
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+#footer > ul {
+  margin-top: 30px;
+}
+
+#footer p {
+  color: var(--ash-color);
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.social-media {
+  flex-wrap: wrap;
+}
+
+.social-media img {
+  width: 80px;
+  height: auto;
+  margin: 0 10px 30px 10px;
+  filter: grayscale(100%) contrast(30%);
+}
+
+#base-footer {
+  width: 100%;
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+#bs-logo small {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#base-footer ul {
+  width: 90%;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  gap: 50px;
+  margin: auto;
+}
+
+#base-footer small {
+  font-size: 11px;
+}
+
+#base-footer img {
+  width: 40px;
+  height: auto;
+}
+
+.fb {
+  width: 40px;
+  margin-right: 35px;
+}
+
+.twitter {
+  width: 60px;
+}
+
+.linkedin {
+  width: 50px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+
+  .d-mobile {
+    display: none;
+  }
+
+  .dsk,
+  .logo {
+    display: block;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    gap: 5px;
+  }
+
+  #showcase h1 {
+    text-align: center;
+  }
+
+  #showcase .description {
+    background-color: #fff;
+    border: 1px solid var(--ash-color);
+    text-align: center;
+    width: 80%;
+    margin: 15px auto;
+    font-style: italic;
+    line-height: 2;
+    padding: 20px;
+  }
+
+  #showcase p {
+    font-size: 20px;
+  }
+
+  #account-section p {
+    font-size: 17px;
+    margin: 0;
+  }
+
+  .agenda {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    gap: 20px;
+  }
+
+  .agenda > div > div:hover {
+    background-color: rgba(236, 82, 66, 0.4);
+    transition: 0.4s;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .hr {
+    width: 100%;
+    background-color: var(--ash-color);
+    margin: 50px 0;
+  }
+
+  .box {
+    width: 40%;
+    padding: 50px;
+  }
+
+  .social-media img {
+    width: 150px;
+    margin: 0 30px 30px 30px;
+  }
+
+  footer > ul img:hover {
+    filter: grayscale(0%) contrast(100%);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .fb {
+    width: 50px;
+    margin-right: 35px;
+  }
+
+  .twitter {
+    width: 80px;
+  }
+
+  .linkedin {
+    width: 60px;
+  }
+}
