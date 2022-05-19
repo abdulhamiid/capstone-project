@@ -233,7 +233,7 @@ h2 {
   justify-content: space-between;
   width: 100%;
   padding: 30px 10px;
-  background-color: rgb(73, 72, 72);
+  background-color: rgba(73, 72, 72, 0.6);
   margin-bottom: 20px;
   text-align: left;
 }
@@ -538,7 +538,7 @@ footer {
   footer > ul img:hover {
     filter: grayscale(0%) contrast(100%);
     transition: 0.5s;
-    cursor: pointer
+    cursor: pointer;
   }
 
   #bs-logo {

@@ -242,7 +242,7 @@
   footer > ul img:hover {
     filter: grayscale(0%) contrast(100%);
     transition: 0.5s;
-    cursor: pointer
+    cursor: pointer;
   }
 
   .fb {
