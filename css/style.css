@@ -298,6 +298,10 @@ hr {
   font-weight: 700 !important;
 }
 
+/* #cart  h3 {
+  font-size: 19px;
+} */
+
 .logo {
   display: none;
 }
@@ -484,7 +488,7 @@ footer {
   #media li {
     grid-template-columns: 1fr;
     text-align: center;
-    height: auto;
+    height: 200px;
   }
 
   #media li:hover {
@@ -517,7 +521,6 @@ footer {
 
   #footer > ul {
     margin-top: 20px;
-    flex-wrap: wrap;
   }
 
   #footer p {
