@@ -126,6 +126,12 @@
   padding: 30px 0;
 }
 
+#bs-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 #bs-logo small {
   font-size: 12px;
   font-weight: 600;
