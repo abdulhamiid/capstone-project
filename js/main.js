@@ -62,11 +62,12 @@ for (let i = 0; i < guest.length; i += 1) {
   createSpeakers(guest[i]);
 }
 
-const btn = document.querySelector('.btn-more')
-btn.addEventListener('click', (e) => {
-  document.querySelectorAll('.hs').forEach(elem => {
+const btn = document.querySelector('.btn-more');
+btn.addEventListener('click', () => {
+  btn.classList.toggle('show');
+  /* eslint no-unused-expressions: [2, { allowShortCircuit: true, allowTernary: true }] */
+  btn.classList.contains('show') ? btn.innerHTML = 'Hide <i class="bi bi-chevron-up"></i>' : btn.innerHTML = 'MORE <i class="bi bi-chevron-down"></i>';
+  document.querySelectorAll('.hs').forEach((elem) => {
     elem.classList.toggle('hide-speaker');
-    btn.classList.toggle('show');
-    btn.classList.contains('show') ? btn.innerHTML = `Hide <i class="bi bi-chevron-up"></i>` : btn.innerHTML = `MORE <i class="bi bi-chevron-down"></i>`
-  })
-})
+  });
+});
