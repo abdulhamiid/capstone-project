@@ -38,13 +38,6 @@ li {
   display: none;
 }
 
-#col-d .hide-speaker {
-  visibility: hidden;
-  height: 0;
-  margin: 0;
-  gap: 0;
-}
-
 .show {
   display: block;
 }
@@ -359,6 +352,12 @@ footer {
   display: none;
 }
 
+#col-d .hide-speaker {
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+}
+
 @media (min-width: 768px) {
   .menu {
     display: none;
@@ -625,5 +624,11 @@ footer {
   #speaker p {
     font-size: 12px;
     line-height: 1.5;
+  }
+
+  #col-d .hide-speaker {
+    visibility: visible;
+    height: auto;
+    margin: 30px auto;
   }
 }
