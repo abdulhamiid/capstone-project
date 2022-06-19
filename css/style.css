@@ -358,7 +358,6 @@ footer {
   margin: 0;
 }
 
-
 @media (min-width: 768px) {
   .menu {
     display: none;
@@ -632,5 +631,4 @@ footer {
     height: auto;
     margin: 30px auto;
   }
-    
 }
