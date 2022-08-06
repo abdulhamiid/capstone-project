@@ -22,6 +22,7 @@ To this project I have added :
 ## Screenshots
 ![screenshot](./images/desktop1.PNG)
 ![screenshot](./images/desktop2.PNG)
+![screenshot](./images/desktop3.PNG)
 ![screenshot](./images/mobile.PNG)
 ![screenshot](./images/mobile1.PNG)
 ![screenshot](./images/menu.PNG)
