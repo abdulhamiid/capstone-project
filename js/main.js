@@ -6,6 +6,7 @@ const toggle = () => {
   navList.classList.toggle('hide');
   document.body.classList.toggle('no-scroll');
 }
+
 menu.addEventListener('click', () => {
   toggle()
 });
