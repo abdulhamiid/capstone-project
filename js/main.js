@@ -5,14 +5,14 @@ const closeMenu = document.querySelector('#close');
 const toggle = () => {
   navList.classList.toggle('hide');
   document.body.classList.toggle('no-scroll');
-}
+};
 
 menu.addEventListener('click', () => {
-  toggle()
+  toggle();
 });
 
 closeMenu.addEventListener('click', () => {
-  toggle()
+  toggle();
 });
 
 const guest = [
