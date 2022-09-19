@@ -9,39 +9,42 @@
   <title>capstone project</title>
 </head>
 <body>
+  <div>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+    <nav id="main-nav">
+      <!-- hamburger menu for mobile -->
+      <div class="flex-column menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </div>
+
+      <header>
+        <a href="index.html" class="logo">
+          <img src="./images/mssnlogo.png" alt="society_logo">
+          <h1>MSSN</h1>
+        </a>
+      </header>
+      <ul class="nav-list hide">
+        <li><a href="index.html" class="hide">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Sponsor</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </nav>
+  </div>
+  
   <main id="main-section">
-    <div class="showcase-area">
+    <section class="showcase-area">
       <div>
-        <nav id="top-nav">
-          <ul>
-            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-            <li><a href="#">Logout</a></li>
-          </ul>
-        </nav>
-        <header id="main-header">
-          <nav>
-            <div class="flex-column menu">
-              <span class="hamburger"></span>
-              <span class="hamburger"></span>
-              <span class="hamburger"></span>
-            </div>
-            <a href="index.html" class="logo"><img src="./images/mssnlogo.png" alt="society_logo"><span>MSSN</span></a>
-            <ul class="nav-list hide">
-              <li id="close">
-                <div class="flex">
-                  <a href="index.html" id="active"><i class="bi bi-house-fill"></i></a>
-                  <i class="bi bi-x-lg flex"></i>
-                </div>
-              </li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#">Programs</a></li>
-              <li><a href="#">Register</a></li>
-              <li><a href="#">Sponsor</a></li>
-              <li><a href="#">News</a></li>
-            </ul>
-          </nav>
-        </header>
         <div id="showcase">
           <p>Welcome!</p>
           <h1>ISLAMIC VACATION<br>COURSE<br>MSSN B-ZONE</h1>
@@ -50,7 +53,8 @@
           <small>@ KM 30, Imolisa Village, Ogun State. Nigeria.</small>
         </div>
       </div>
-    </div>
+    </section>
+
     <section id="media" class="flex-column">
       <h3>BZONE MEDIA</h3>
       <hr>
@@ -83,6 +87,7 @@
       </ul>
       <a href="#" class="btn flex" role="button">OUR PROGRAMMES</a>
     </section>
+
     <section id="cart">
       <div id="speakers-about" class="flex-column">
         <h3>Featured Speakers</h3>
@@ -91,7 +96,9 @@
         <button class="btn btn-more" type="button">MORE <i class="bi bi-chevron-down"></i></button>
       </div>
     </section>
+
   </main>
+
   <footer id="footer">
     <p>Partner</p>
     <hr>
