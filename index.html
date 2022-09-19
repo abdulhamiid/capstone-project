@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,49 +9,55 @@
   <link rel="stylesheet" href="css/style.css">
   <title>capstone project</title>
 </head>
+
 <body>
+  <div>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+    <nav id="main-nav">
+      <!-- hamburger menu for mobile -->
+      <div class="flex-column menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </div>
+
+      <header>
+        <a href="index.html" class="logo">
+          <img src="./images/mssnlogo.png" alt="society_logo">
+          <h1>MSSN</h1>
+        </a>
+      </header>
+      <ul class="nav-list hide">
+        <li><a href="index.html" class="hide">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Sponsor</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </nav>
+  </div>
+
   <main id="main-section">
-    <div class="showcase-area">
+    <section class="showcase-area">
       <div>
-        <nav id="top-nav">
-          <ul>
-            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-            <li><a href="#">Logout</a></li>
-          </ul>
-        </nav>
-        <header id="main-header">
-          <nav>
-            <div class="flex-column menu">
-              <span class="hamburger"></span>
-              <span class="hamburger"></span>
-              <span class="hamburger"></span>
-            </div>
-            <a href="index.html" class="logo"><img src="./images/mssnlogo.png" alt="society_logo"><span>MSSN</span></a>
-            <ul class="nav-list hide">
-              <li id="close">
-                <div class="flex">
-                  <a href="index.html" id="active"><i class="bi bi-house-fill"></i></a>
-                  <i class="bi bi-x-lg flex"></i>
-                </div>
-              </li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#">Programs</a></li>
-              <li><a href="#">Register</a></li>
-              <li><a href="#">Sponsor</a></li>
-              <li><a href="#">News</a></li>
-            </ul>
-          </nav>
-        </header>
         <div id="showcase">
           <p>Welcome!</p>
           <h1>ISLAMIC VACATION<br>COURSE<br>MSSN B-ZONE</h1>
-          <p class="description">Knowledge is a tool for the ummah, invest your wealth with to build a beautiful future for the next genearation.</p>
+          <p class="description">Knowledge is a tool for the ummah, invest your wealth with to build a beautiful future
+            for the next genearation.</p>
           <h2>2022.12.24(Sat) ~ 1(Sun)</h2>
           <small>@ KM 30, Imolisa Village, Ogun State. Nigeria.</small>
         </div>
       </div>
-    </div>
+    </section>
+
     <section id="media" class="flex-column">
       <h3>BZONE MEDIA</h3>
       <hr>
@@ -83,6 +90,7 @@
       </ul>
       <a href="#" class="btn flex" role="button">OUR PROGRAMMES</a>
     </section>
+
     <section id="cart">
       <div id="speakers-about" class="flex-column">
         <h3>Featured Speakers</h3>
@@ -91,7 +99,9 @@
         <button class="btn btn-more" type="button">MORE <i class="bi bi-chevron-down"></i></button>
       </div>
     </section>
+
   </main>
+
   <footer id="footer">
     <p>Partner</p>
     <hr>
@@ -101,7 +111,7 @@
       <li><img src="./images/mozilla-removebg-preview.png" alt=""></li>
       <li><img src="./images/microverse-removebg-preview.png" alt=""></li>
       <li><img src="./images/naver-removebg-preview.png" alt=""></li>
-    </ul>  
+    </ul>
     <div id="base-footer">
       <ul>
         <li id="bs-logo">
@@ -111,11 +121,12 @@
         <li>
           <h6>Zonal Office:</h6>
           <small>Al-halal Nursery & Primary School, Off Lagos/Ibadan Expressway,<br>Sanyo Area, Ibadan, Oyo State.
-            Permanent Site: KM 30, Lagos/Ibadan Expressway</small> 
+            Permanent Site: KM 30, Lagos/Ibadan Expressway</small>
         </li>
       </ul>
     </div>
   </footer>
   <script src="js/main.js"></script>
 </body>
+
 </html>
