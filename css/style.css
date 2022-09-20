@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 
+/* global styles */
 * {
   margin: 0;
   padding: 0;
@@ -57,30 +58,21 @@ body {
   color: var(--primary-color);
 }
 
-#close > div {
-  justify-content: space-between;
-}
 
-#main-section > div {
-  background-image: url(../images/suleymaniye-mosque.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: auto;
-}
-
-#main-section > div > div {
-  background-color: rgba(255, 255, 255, 0.9);
-  position: relative;
+/* navbar */
+#main-nav {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  color: var(--primary-color);
+  z-index: 3;
 }
 
+/* hamburger menu */
 .menu {
   width: 30px;
+  margin: 20px;
+  z-index: 1;
 }
 
 .hamburger {
@@ -94,37 +86,29 @@ body {
   cursor: pointer;
 }
 
-nav {
-  padding: 40px 30px;
-}
-
-#top-nav {
-  display: none;
-}
-
+/* mobile nav list */
 .nav-list {
-  position: absolute;
   background-color: var(--primary-color);
   font-size: 20px;
-  padding: 90px 20px 60px 20px;
+  padding: 60px 20px 60px 20px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100vh;
+  position: absolute;
   z-index: 3;
 }
 
-#close {
+.nav-list > ul {
+  width: 100%;
+}
+
+.bi-x-lg {
   color: #fff;
   font-size: 25px;
   position: absolute;
-  top: 0;
-  right: 0;
-  margin: auto;
-  padding: 20px 25px 20px 30px;
-  border: none;
-  list-style: none;
-  width: 100%;
+  top: 15px;
+  left: 85%;
 }
 
 #close .bi-x-lg {
@@ -138,8 +122,29 @@ nav {
   cursor: pointer;
 }
 
-#main-section .nav-list > div {
-  justify-content: space-between;
+/* shocase section */
+.showcase-area {
+  background-image: url(../images/suleymaniye-mosque.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: auto;
+}
+
+.showcase-area > div {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--primary-color);
+  padding-top: 4.5rem;
+
+}
+
+#primary-nav {
+  display: none;
 }
 
 .nav-list li {
@@ -185,8 +190,8 @@ h1 {
   background-image: url(../images/mosques.webp);
   background-repeat: repeat;
   background-size: cover;
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  color: transparent;
   font-size: 30px;
   text-transform: uppercase;
   font-family: "cocogoose", "Arial", sans-serif;
@@ -276,6 +281,7 @@ hr {
   background-color: var(--secondary-color);
   color: #fff;
   text-decoration: none;
+  width: 80%;
 }
 
 #cart {
@@ -355,6 +361,11 @@ footer {
 }
 
 @media (min-width: 768px) {
+  nav {
+    width: 100%;
+    margin: auto;
+  }
+
   .menu {
     display: none;
   }
@@ -369,7 +380,28 @@ footer {
     gap: 5px;
   }
 
-  #top-nav {
+  #primary-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 7;
+  }
+
+  /* navbar */
+#main-nav {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 100px 15px 100px;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+  #primary-nav > ul {
     width: 100%;
     background-color: var(--primary-color);
     padding: 3px 100px;
@@ -377,22 +409,22 @@ footer {
     justify-content: flex-end;
   }
 
-  #top-nav ul {
+  #primary-nav ul {
     display: flex;
     align-items: center;
   }
 
-  #top-nav a {
+  #primary-nav a {
     color: #fff;
     font-size: 12px;
     text-decoration: none;
   }
 
-  #top-nav li {
+  #primary-nav li {
     margin: 0 10px;
   }
 
-  #top-nav a:hover {
+  #primary-nav a:hover {
     color: var(--secondary-color);
   }
 
@@ -401,37 +433,47 @@ footer {
     box-shadow: 0 2px 4px var(--ash-color);
   }
 
-  nav {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-    justify-content: space-between;
-    width: 70%;
-    margin: auto;
-  }
-
   .logo img {
     width: 40px;
     height: 40px;
   }
 
   .nav-list {
+    display: block;
+    position: static;
+    padding: 0;
+    height: auto;
+    width: auto;
+    background: none;
+    border: none;
+  }
+
+  .nav-list ul a {
+    color: #272a31;
+  }
+
+  .nav-list ul {
     position: static;
     display: flex;
     align-items: center;
     justify-content: center;
     justify-self: center;
     align-self: center;
-    background: none;
+    color: #272a31;
     font-size: 13px;
     padding: 0;
-    height: auto;
-    width: auto;
+
   }
 
-  #main-header li {
+  .nav-list li {
     border-bottom: none;
     padding: 0 30px;
+  }
+
+  .nav-list li:last-child {
+    border: 3px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 10px 15px;
   }
 
   #close {
@@ -443,7 +485,7 @@ footer {
     text-decoration: none;
   }
 
-  #main-header .nav-list li a:hover {
+  .nav-list li a:hover {
     color: var(--secondary-color);
   }
 
@@ -456,7 +498,7 @@ footer {
   }
 
   #showcase {
-    margin-top: 60px;
+    margin-top: 120px;
     width: 70%;
   }
 
