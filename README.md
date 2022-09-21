@@ -23,14 +23,8 @@ To this project I have added :
 ### Video presentation
 [Watch](https://www.loom.com/share/fbd0cd5669154c6ca6c16a706afd6227)
 
-## Screenshots
-![screenshot](./images/desktop1.PNG)
-![screenshot](./images/desktop2.PNG)
-![screenshot](./images/desktop3.PNG)
-![screenshot](./images/mobile.PNG)
-![screenshot](./images/mobile1.PNG)
-![screenshot](./images/menu.PNG)
-
+## Screenshot
+![screenshot](./images/capstone.png)
 
 ## Getting Started
 
