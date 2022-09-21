@@ -165,10 +165,6 @@ li {
   text-decoration: none;
 }
 
-.nav-list li a:hover {
-  color: var(--ash-color);
-}
-
 #showcase {
   display: flex;
   flex-direction: column;
@@ -444,9 +440,14 @@ footer {
     display: none;
   }
 
-  .nav-list li a:hover,
-  #primary-nav a:hover {
+  a:hover {
     color: var(--secondary-color);
+  }
+
+  #primary-nav a {
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
   }
 
   #primary-nav > ul {
@@ -460,12 +461,6 @@ footer {
   #primary-nav ul {
     display: flex;
     align-items: center;
-  }
-
-  #primary-nav a {
-    color: #fff;
-    font-size: 12px;
-    text-decoration: none;
   }
 
   #primary-nav li {
