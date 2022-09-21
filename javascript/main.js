@@ -1,6 +1,6 @@
 const menu = document.querySelector('.menu');
 const navList = document.querySelector('.nav-list');
-const closeMenu = document.querySelector('#close');
+const closeMenu = document.querySelector('.bi-x-lg');
 
 const toggle = () => {
   navList.classList.toggle('hide');
