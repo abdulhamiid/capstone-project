@@ -348,6 +348,7 @@ hr {
 
 footer {
   display: none;
+  color: var(--primary-color);
 }
 
 #col-d .hide-speaker {
