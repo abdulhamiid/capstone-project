@@ -14,6 +14,16 @@
   --ash-color: #d3d3d3;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -27,7 +37,6 @@
 }
 
 #active {
-  color: var(--secondary-color);
   font-weight: 600;
 }
 
@@ -51,11 +60,6 @@ li {
   width: 90%;
   margin: auto;
   text-align: center;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  color: var(--primary-color);
 }
 
 
@@ -199,10 +203,6 @@ h1 {
   -webkit-font-smoothing: antialiased;
 }
 
-#showcase > p {
-  color: var(--secondary-color);
-}
-
 #showcase .description {
   font-size: 14px;
   line-height: 1.5;
@@ -266,7 +266,6 @@ hr {
 }
 
 #media .title a {
-  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -285,6 +284,10 @@ hr {
 
 #cart {
   margin: 30px 0;
+}
+
+#cart h3 {
+  color: var(--primary-color);
 }
 
 #cart .btn {
@@ -325,7 +328,7 @@ hr {
   width: 100px;
   box-sizing: border-box;
   height: 80px;
-  border: 1px solid;
+  border: 1px solid var(--primary-color);
   box-shadow: 5px 5px 8px var(--primary-color), 10px 10px 8px var(--ash-color);
 }
 
@@ -336,7 +339,6 @@ hr {
 #speaker p {
   font-size: 10px;
   font-style: italic;
-  color: var(--secondary-color);
   line-height: 1.5;
 }
 
@@ -435,7 +437,6 @@ footer {
 
   .nav-list li:last-child {
     border: 3px solid var(--secondary-color);
-    color: var(--secondary-color);
     padding: 10px 15px;
   }
 
@@ -443,7 +444,8 @@ footer {
     display: none;
   }
 
-  .nav-list li a:hover {
+  .nav-list li a:hover,
+  #primary-nav a:hover {
     color: var(--secondary-color);
   }
 
@@ -468,10 +470,6 @@ footer {
 
   #primary-nav li {
     margin: 0 10px;
-  }
-
-  #primary-nav a:hover {
-    color: var(--secondary-color);
   }
 
   .logo img {

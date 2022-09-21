@@ -65,7 +65,9 @@
   background-image: url(../images/ps.jpg);
 }
 
-.hr {
+.hr,
+.dsk,
+.logo {
   display: none;
 }
 
@@ -81,14 +83,6 @@
 .d-mobile,
 .hr {
   display: block;
-}
-
-.dsk {
-  display: none;
-}
-
-.logo {
-  display: none;
 }
 
 #footer {
