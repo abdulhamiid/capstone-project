@@ -11,7 +11,6 @@ To this project I have added :
 - A speakers area which is built dynamically with JS
 - Two HTML files
 
-
 ## Built With
 
 - HTML
@@ -57,7 +56,7 @@ Open the ```index.html``` on your Browser
 
 - GitHub: [@githubhandle](https://github.com/abdulhamiid)
 - Twitter: [@twitterhandle](https://twitter.com/abdulhamid_adio)
-- LinkedIn: [LinkedIn](https://linkedin.com/)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/abdulhamid-adio)
 
 ## 👏 Acknowledgement 🥇
 This page design was an inspiration from the original design idea by [Cindy Shin in Behance.](https://www.behance.net/adagio07)

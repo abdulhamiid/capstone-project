@@ -32,6 +32,12 @@
 
 .section-1 > .box {
   margin-top: 30px;
+  padding: 100px 20px;
+}
+
+.section-1,
+#section-2 {
+  color: var(--primary-color);
 }
 
 #section-2,
@@ -65,7 +71,9 @@
   background-image: url(../images/ps.jpg);
 }
 
-.hr {
+.hr,
+.dsk,
+.logo {
   display: none;
 }
 
@@ -76,19 +84,6 @@
   height: 100%;
   color: #fff;
   font-size: 16px;
-}
-
-.d-mobile,
-.hr {
-  display: block;
-}
-
-.dsk {
-  display: none;
-}
-
-.logo {
-  display: none;
 }
 
 #footer {
@@ -171,10 +166,6 @@
 @media (min-width: 768px) {
   h1 {
     text-align: center;
-  }
-
-  .d-mobile {
-    display: none;
   }
 
   .dsk,
