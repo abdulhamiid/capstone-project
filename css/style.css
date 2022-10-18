@@ -626,35 +626,10 @@ hr {
     color: var(--ash-color);
   }
 
-  #footer {
-    display: block;
-    width: 100%;
-    padding-top: 10px;
-    background-color: var(--primary-color);
-    text-align: center;
-  }
-
-  #footer > ul {
-    margin-top: 20px;
-    flex-wrap: wrap;
-  }
-
-  #footer p {
-    color: var(--ash-color);
-    padding-top: 30px;
-    padding-bottom: 10px;
-  }
-
   .social-media img {
     width: 150px;
     filter: grayscale(100%) contrast(30%);
     margin: 0 30px 30px 30px;
-  }
-
-  footer > ul img:hover {
-    filter: grayscale(0%) contrast(100%);
-    transition: 0.5s;
-    cursor: pointer;
   }
 
   #bs-logo {
@@ -675,31 +650,6 @@ hr {
 
   .linkedin {
     width: 60px;
-  }
-
-  #base-footer {
-    width: 100%;
-    background-color: #fff;
-    padding: 40px;
-  }
-
-  #bs-logo small {
-    font-size: 12px;
-    font-weight: 600;
-  }
-
-  #base-footer ul {
-    flex-direction: row;
-    text-align: left;
-  }
-
-  #base-footer small {
-    font-size: 11px;
-  }
-
-  #base-footer img {
-    width: 40px;
-    height: auto;
   }
 
   #col-d {
