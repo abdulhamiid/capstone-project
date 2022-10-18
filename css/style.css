@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Zen+Maru+Gothic&display=swap');
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 
 /* global styles */
@@ -15,13 +15,17 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: var(--secondary-color);
 }
 
-a {
+a{
   text-decoration: none;
   color: var(--secondary-color);
+}
+
+#primary-text {
+  color: var(--primary-color)
 }
 
 .flex {
@@ -167,15 +171,18 @@ li {
 #showcase {
   display: flex;
   flex-direction: column;
-  padding-top: 15px;
-  padding-bottom: 70px;
+  padding: 15px 0;
   text-align: left;
   width: 90%;
   height: 70%;
   margin: auto;
 }
 
-#showcase p,
+.top-header {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 25px;
+  color: #ec5242;
+}
 #showcase small {
   margin: 10px 0;
 }
@@ -185,12 +192,12 @@ li {
 }
 
 h1 {
-  background-image: url(../images/mosques.webp);
+  background-image: url(../images/background3.jpg);
   background-repeat: repeat;
   background-size: cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  font-size: 30px;
+  font-size: 32px;
   text-transform: uppercase;
   font-family: "cocogoose", "Arial", sans-serif;
   font-weight: 500;
@@ -203,6 +210,7 @@ h1 {
   line-height: 1.5;
   font-weight: 500;
   color: var(--primary-color);
+  box-shadow: rgb(0 0 0 / 20%) 0 0 6px;
   padding: 15px;
   border: 3px solid #fff;
   width: 100%;
@@ -216,8 +224,12 @@ h2 {
 }
 
 #media {
-  background-color: var(--primary-color);
-  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(39, 42, 49, 0.8) 20%, rgb(39, 42, 49) 70%), url(../images/pattern4.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  color: #f5f5f5;
   padding: 30px 0;
 }
 
@@ -230,15 +242,17 @@ h2 {
   display: grid;
   grid-template-columns: 20% 30% 45%;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 30px 10px;
-  background-color: rgba(73, 72, 72, 0.6);
+  height: 100px;
+  padding: 10px 25px;
+  background-color: #f5f5f520;
   margin-bottom: 20px;
   text-align: left;
 }
 
 #media ul li i {
-  font-size: 35px;
+  font-size: 25px;
   color: #fff;
 }
 
@@ -322,9 +336,7 @@ hr {
 #speaker img {
   width: 100px;
   box-sizing: border-box;
-  height: 80px;
-  border: 1px solid var(--primary-color);
-  box-shadow: 5px 5px 8px var(--primary-color), 10px 10px 8px var(--ash-color);
+  height: 90px;
 }
 
 #speaker h3 {
@@ -393,7 +405,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 100px 15px 100px;
+    padding: 40px 190px 15px 190px;
     left: 0;
     width: 100%;
     z-index: 3;
@@ -411,6 +423,11 @@ footer {
 
   .nav-list a {
     color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  .nav-list > ul> li:last-child a {
+    color: var(--secondary-color);
     text-decoration: none;
   }
 
@@ -453,7 +470,7 @@ footer {
   #primary-nav > ul {
     width: 100%;
     background-color: var(--primary-color);
-    padding: 3px 100px;
+    padding: 3px 180px;
     display: flex;
     justify-content: flex-end;
   }
@@ -481,8 +498,13 @@ footer {
   }
 
   #showcase {
-    margin-top: 120px;
+    margin-top: 80px;
+    padding-bottom: 60px;
     width: 70%;
+  }
+
+  .top-header {
+    font-size: 32px;
   }
 
   #showcase p {
@@ -516,8 +538,9 @@ footer {
 
   #media li {
     grid-template-columns: 1fr;
+    height: 200px;
+    padding: 10px;
     text-align: center;
-    height: auto;
   }
 
   #media li:hover {
@@ -638,12 +661,12 @@ footer {
   }
 
   #speaker img {
-    width: 100%;
-    height: 100px;
+    width: 110%;
+    height: 110px;
   }
 
   #speaker p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5;
   }
 
