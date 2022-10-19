@@ -76,7 +76,6 @@ for (let i = 0; i < guest.length; i += 1) {
 const btn = document.querySelector('.btn-more');
 btn.addEventListener('click', () => {
   btn.classList.toggle('show');
-  /* eslint no-unused-expressions: [2, { allowShortCircuit: true, allowTernary: true }] */
   if(btn.classList.contains('show')){
     btn.innerHTML = 'HIDE <i class="bi bi-chevron-up"></i>'
   }
