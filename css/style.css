@@ -35,9 +35,7 @@ a{
 }
 
 .flex-column {
-  display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 #active {
@@ -89,7 +87,8 @@ li {
   background-color: var(--primary-color);
 }
 
-.menu:hover {
+.menu:hover,
+.bi-x-lg {
   cursor: pointer;
 }
 
@@ -106,11 +105,8 @@ li {
   z-index: 3;
 }
 
-.nav-list > ul {
-  width: 100%;
-}
-
 .bi-x-lg {
+  cursor: pointer;
   color: #fff;
   font-size: 25px;
   position: absolute;
@@ -118,16 +114,10 @@ li {
   left: 85%;
 }
 
-#close .bi-x-lg {
-  padding: 6px;
-  border-radius: 50%;
+.nav-list > ul {
+  width: 100%;
 }
 
-#close .bi-x-lg:hover {
-  background-color: var(--secondary-color);
-  transition: 0.7s;
-  cursor: pointer;
-}
 
 /* shocase section */
 .showcase-area {
