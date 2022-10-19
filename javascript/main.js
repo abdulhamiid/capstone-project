@@ -17,34 +17,40 @@ closeMenu.addEventListener('click', () => {
 
 const guest = [
   {
-    name: 'Sultan of Sokoto',
-    about: 'Spiritual leader of Nigeria\'s Muslims',
-    image: './images/sultan-removebg-preview.png',
+    name: 'SohYeong Leda',
+    about: 'Lorem, ipsum dolor sit amet consect.',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, dolorem quibusdam.',
+    image: './images/Winnie.png',
     display: 'block',
   }, {
-    name: 'Shaykh Sulayman Ar Ruhaylī',
-    about: 'A professor at the Islamic university of Madinah, teacher at Masjid Nabawi, Iman wa Khatib fi Masjid Quba.',
-    image: './images/sheykh_ruhayli-removebg-preview.png',
+    name: 'Yochai Philips',
+    about: 'Lorem, ipsum dolor sit amet consect.',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, dolorem quibusdam.',
+    image: './images/Paul.png',
+    display: 'block',
+  }, {
+    name: 'Julia Lila',
+    about: 'Lorem, ipsum dolor sit amet consect.',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, dolorem quibusdam.',
+    image: './images/Daisy.png',
     display: 'hs hide-speaker',
   }, {
-    name: 'Dr. Zakir Naik',
-    about: 'An Indian Salafi Islamic televangelist and public orator who focuses on comparative religion.',
-    image: './images/Dr_zakir-removebg-preview.png',
+    name: 'Daisy Monreo',
+    about: 'Lorem, ipsum dolor sit amet consect.',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, dolorem quibusdam.',
+    image: './images/Shantel.png',
     display: 'hs hide-speaker',
   }, {
-    name: 'Sheikh Okasha Kameny',
-    about: 'Imam Okasha Kameny is the Imam of Masjid Al-Wasatiyah Wal-Itidaal located in Philadelphia, Pennsylvania',
-    image: './images/Okasha-removebg-preview.png',
+    name: 'Yochai Philips',
+    about: 'Lorem, ipsum dolor sit amet consect.',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, dolorem quibusdam.',
+    image: './images/Paul.png',
     display: 'hs hide-speaker',
   }, {
-    name: 'Dr. Bilal Philips',
-    about: 'A Canadian Islamic teacher, speaker, author, founder and chancellor of the International Open University, who lives in Qatar.',
-    image: './images/Dr-Bilal-Philips-removebg-preview.png',
-    display: 'hs hide-speaker',
-  }, {
-    name: 'Mallam Yusuf Adepoju',
-    about: 'Chief Lecturer. Academy of Islamic Propagation',
-    image: './images/Mallam_yusuf-removebg-preview.png',
+    name: 'SohYeong Leda',
+    about: 'Lorem, ipsum dolor sit amet consect.',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, dolorem quibusdam.',
+    image: './images/Winnie.png',
     display: 'hs hide-speaker',
   },
 ];
@@ -56,8 +62,9 @@ function createSpeakers(prop) {
     <div><img src="${prop.image}" alt=""></div>
     <div>
     <h3>${prop.name}</h3>
-    <hr>
     <p>${prop.about}</p>
+    <hr>
+    <p id="primary-text">${prop.description}</p>
     </div>
     </div>`);
 }
@@ -70,7 +77,12 @@ const btn = document.querySelector('.btn-more');
 btn.addEventListener('click', () => {
   btn.classList.toggle('show');
   /* eslint no-unused-expressions: [2, { allowShortCircuit: true, allowTernary: true }] */
-  btn.classList.contains('show') ? btn.innerHTML = 'Hide <i class="bi bi-chevron-up"></i>' : btn.innerHTML = 'MORE <i class="bi bi-chevron-down"></i>';
+  if(btn.classList.contains('show')){
+    btn.innerHTML = 'HIDE <i class="bi bi-chevron-up"></i>'
+  }
+  else {
+    btn.innerHTML = 'MORE <i class="bi bi-chevron-down"></i>'
+  }
   document.querySelectorAll('.hs').forEach((elem) => {
     elem.classList.toggle('hide-speaker');
   });
