@@ -88,7 +88,8 @@ li {
 }
 
 .menu:hover,
-.bi-x-lg {
+.bi-x-lg,
+#cart .btn {
   cursor: pointer;
 }
 
@@ -334,7 +335,7 @@ hr {
 }
 
 #speaker p {
-  font-size: 10px;
+  font-size: 12px;
   font-style: italic;
   line-height: 1.5;
 }
