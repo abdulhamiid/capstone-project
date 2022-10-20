@@ -22,10 +22,6 @@
   margin-top: 5px;
 }
 
-#account-section p {
-  font-size: 15px;
-}
-
 .shukr {
   font-size: 18px;
 }
@@ -57,7 +53,7 @@
 }
 
 #section-2 p,
-#section-2 h3{
+#section-2 h3 {
   margin: 8px;
 }
 
@@ -100,7 +96,7 @@
   font-size: 16px;
 }
 
-.agenda > div > div h3 {
+.agenda > div > div h4 {
   font-size: 25px;
 }
 
@@ -175,7 +171,6 @@
   .section-1 .about {
     width: 45%;
   }
-  
 
   .hr {
     width: 100%;
