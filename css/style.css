@@ -19,13 +19,13 @@ body {
   color: var(--secondary-color);
 }
 
-a{
+a {
   text-decoration: none;
   color: var(--secondary-color);
 }
 
 #primary-text {
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
 .flex {
@@ -140,7 +140,7 @@ li {
   padding-top: 4.5rem;
 }
 
-#primary-nav {
+#top-bar {
   display: none;
 }
 
@@ -174,12 +174,10 @@ li {
   font-size: 25px;
   color: #ec5242;
 }
-#showcase small {
-  margin: 10px 0;
-}
 
 #showcase small {
   font-size: 14px;
+  margin: 10px 0;
 }
 
 h1 {
@@ -253,6 +251,13 @@ hr {
   height: 1px;
   margin: 5px auto 0 auto;
   border: none;
+}
+
+.social-media img {
+  width: 80px;
+  height: auto;
+  margin: 0 10px 30px 10px;
+  filter: grayscale(100%) contrast(30%);
 }
 
 #media img {
@@ -371,13 +376,6 @@ hr {
   flex-wrap: wrap;
 }
 
-.social-media img {
-  width: 80px;
-  height: auto;
-  margin: 0 10px 30px 10px;
-  filter: grayscale(100%) contrast(30%);
-}
-
 #base-footer {
   width: 100%;
   background-color: #fff;
@@ -432,6 +430,10 @@ hr {
     display: none;
   }
 
+  a:hover {
+    color: var(--secondary-color);
+  }
+
   .logo {
     display: block;
     display: flex;
@@ -442,7 +444,7 @@ hr {
     gap: 5px;
   }
 
-  #primary-nav {
+  #top-bar {
     display: block;
     position: fixed;
     top: 0;
@@ -480,7 +482,7 @@ hr {
     text-decoration: none;
   }
 
-  .nav-list > ul> li:last-child a {
+  .nav-list > ul > li:last-child a {
     color: var(--secondary-color);
     text-decoration: none;
   }
@@ -511,17 +513,13 @@ hr {
     display: none;
   }
 
-  a:hover {
-    color: var(--secondary-color);
-  }
-
-  #primary-nav a {
+  #top-bar a {
     color: #fff;
     font-size: 12px;
     text-decoration: none;
   }
 
-  #primary-nav > ul {
+  #top-bar > ul {
     width: 100%;
     background-color: var(--primary-color);
     padding: 3px 180px;
@@ -529,12 +527,12 @@ hr {
     justify-content: flex-end;
   }
 
-  #primary-nav ul {
+  #top-bar ul {
     display: flex;
     align-items: center;
   }
 
-  #primary-nav li {
+  #top-bar li {
     margin: 0 10px;
   }
 
