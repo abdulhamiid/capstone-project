@@ -76,11 +76,10 @@ for (let i = 0; i < guest.length; i += 1) {
 const btn = document.querySelector('.btn-more');
 btn.addEventListener('click', () => {
   btn.classList.toggle('show');
-  if(btn.classList.contains('show')){
-    btn.innerHTML = 'HIDE <i class="bi bi-chevron-up"></i>'
-  }
-  else {
-    btn.innerHTML = 'MORE <i class="bi bi-chevron-down"></i>'
+  if (btn.classList.contains('show')) {
+    btn.innerHTML = 'HIDE <i class="bi bi-chevron-up"></i>';
+  } else {
+    btn.innerHTML = 'MORE <i class="bi bi-chevron-down"></i>';
   }
   document.querySelectorAll('.hs').forEach((elem) => {
     elem.classList.toggle('hide-speaker');
