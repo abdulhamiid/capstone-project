@@ -100,12 +100,6 @@
   background-image: url(../images/ps.jpg);
 }
 
-.dsk,
-.logo,
-.hr {
-  display: none;
-}
-
 .agenda > div > div {
   background-color: rgba(236, 82, 66, 0.8);
   justify-content: center;
@@ -138,16 +132,6 @@
 @media (min-width: 768px) {
   h1 {
     text-align: center;
-  }
-
-  .d-mobile {
-    display: none;
-  }
-
-  .dsk,
-  .hr,
-  .logo {
-    display: block;
   }
 
   .logo {
