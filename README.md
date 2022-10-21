@@ -24,7 +24,7 @@ To this project I have added :
 [Watch](https://www.loom.com/share/fbd0cd5669154c6ca6c16a706afd6227)
 
 ## Screenshot
-![screenshot](./images/capstone.png)
+![screenshot](./images/showcaseimg.png)
 
 ## Getting Started
 
