@@ -474,16 +474,15 @@ hr {
     margin: auto;
   }
 
-
   .d-mobile,
   .menu {
     display: none;
   }
 
   #about {
-    color: var(--secondary-color)
+    color: var(--secondary-color);
   }
-  
+
   .dsk,
   .hr,
   .logo {
