@@ -22,45 +22,74 @@
   margin-top: 5px;
 }
 
-#account-section p {
-  font-size: 15px;
-}
-
 .shukr {
   font-size: 18px;
 }
 
-.section-1 > .box {
+#section-1 > .box {
   margin-top: 30px;
-  padding: 100px 20px;
 }
 
-.section-1,
+#section-1 .about {
+  width: 85%;
+  margin: 36px auto;
+  text-align: center;
+  gap: 7px;
+}
+
+#section-1 p,
+#section-2 p {
+  font-size: 14px;
+  margin: 5px;
+}
+
+#section-1,
 #section-2 {
   color: var(--primary-color);
 }
 
 #section-2,
 .section-3 {
-  margin: 20px auto 20px auto;
+  margin: 20px auto 120px auto;
 }
 
-#section-2 p {
-  margin-top: 15px;
+#section-2 p,
+#section-2 h3 {
+  margin: 8px;
+}
+
+#about > h3,
+#section-2 h3 {
+  position: relative;
+  padding: 12px;
+  margin-bottom: 2px;
+}
+
+#about > h3::after,
+#section-2 h3::after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  border-radius: 2px;
+  background: #ec5242;
+  transition: width 1s 5ms;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .agenda {
   width: 90%;
-  margin: 50px auto;
+  margin: 70px auto;
   gap: 20px;
 }
 
 .agenda > div {
   width: 100%;
-  height: 200px;
+  height: 230px;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 15px 0 0 0;
 }
 
 .h-1 {
@@ -71,83 +100,26 @@
   background-image: url(../images/ps.jpg);
 }
 
-.hr,
 .dsk,
-.logo {
+.logo,
+.hr {
   display: none;
 }
 
 .agenda > div > div {
   background-color: rgba(236, 82, 66, 0.8);
+  justify-content: center;
+  align-items: center;
   z-index: 3;
   width: 100%;
   height: 100%;
   color: #fff;
   font-size: 16px;
+  margin: 15px 0;
 }
 
-#footer {
-  display: block;
-  width: 100%;
-  padding-top: 50px;
-  background-color: var(--primary-color);
-  text-align: center;
-}
-
-#footer > ul {
-  margin-top: 30px;
-}
-
-#footer p {
-  color: var(--ash-color);
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-.social-media {
-  flex-wrap: wrap;
-}
-
-.social-media img {
-  width: 80px;
-  height: auto;
-  margin: 0 10px 30px 10px;
-  filter: grayscale(100%) contrast(30%);
-}
-
-#base-footer {
-  width: 100%;
-  background-color: #fff;
-  padding: 30px 0;
-}
-
-#bs-logo {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-#bs-logo small {
-  font-size: 12px;
-  font-weight: 600;
-}
-
-#base-footer ul {
-  width: 90%;
-  display: flex;
-  text-align: left;
-  justify-content: center;
-  gap: 50px;
-  margin: auto;
-}
-
-#base-footer small {
-  font-size: 11px;
-}
-
-#base-footer img {
-  width: 40px;
-  height: auto;
+.agenda > div > div h4 {
+  font-size: 25px;
 }
 
 .fb {
@@ -168,7 +140,12 @@
     text-align: center;
   }
 
+  .d-mobile {
+    display: none;
+  }
+
   .dsk,
+  .hr,
   .logo {
     display: block;
   }
@@ -180,6 +157,10 @@
     text-decoration: none;
     color: var(--primary-color);
     gap: 5px;
+  }
+
+  #showcase {
+    margin-top: 50px;
   }
 
   #showcase h1 {
@@ -213,11 +194,12 @@
     gap: 20px;
   }
 
-  .agenda > div > div:hover {
-    background-color: rgba(236, 82, 66, 0.4);
-    transition: 0.4s;
-    transform: scale(1.05);
-    cursor: pointer;
+  .agenda > div > div {
+    margin: 0;
+  }
+
+  #section-1 .about {
+    width: 45%;
   }
 
   .hr {
