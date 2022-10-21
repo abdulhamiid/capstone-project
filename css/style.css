@@ -356,16 +356,16 @@ hr {
 #speakers-about > h3::after,
 #media > h3::after,
 #footer p::after {
-    content: "";
-    height: 1px;
-    width: 30px;
-    border-radius: 2px;
-    background: #ec5242;
-    transition: width 1s 5ms;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  content: "";
+  height: 1px;
+  width: 30px;
+  border-radius: 2px;
+  background: #ec5242;
+  transition: width 1s 5ms;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #speaker hr {
@@ -676,6 +676,7 @@ hr {
 
   #speaker {
     width: 100%;
+    margin: 20px auto;
   }
 
   #speaker > div > img {
