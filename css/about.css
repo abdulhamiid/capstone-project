@@ -40,6 +40,7 @@
 .section-1 .about p,
 #section-2 p {
   font-size: 14px;
+  margin: 5px;
 }
 
 .section-1,
@@ -49,17 +50,37 @@
 
 #section-2,
 .section-3 {
-  margin: 20px auto 20px auto;
+  margin: 20px auto 120px auto;
 }
 
 #section-2 p,
 #section-2 h3 {
   margin: 8px;
 }
+.about > h3,
+#section-2 h3 {
+  position: relative;
+  padding: 12px;
+  margin-bottom: 2px;
+}
+
+.about > h3::after,
+#section-2 h3::after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  border-radius: 2px;
+  background: #ec5242;
+  transition: width 1s 5ms;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .agenda {
   width: 90%;
-  margin: 50px auto;
+  margin: 70px auto;
   gap: 20px;
 }
 
@@ -68,7 +89,6 @@
   height: 230px;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 15px 0 0 0;
 }
 
 .h-1 {
@@ -94,6 +114,7 @@
   height: 100%;
   color: #fff;
   font-size: 16px;
+  margin: 15px 0;
 }
 
 .agenda > div > div h4 {
@@ -168,6 +189,9 @@
     gap: 20px;
   }
 
+  .agenda > div > div {
+    margin: 0;
+  }
   .section-1 .about {
     width: 45%;
   }
