@@ -26,24 +26,24 @@
   font-size: 18px;
 }
 
-.section-1 > .box {
+#section-1 > .box {
   margin-top: 30px;
 }
 
-.section-1 .about {
+#section-1 .about {
   width: 85%;
   margin: 36px auto;
   text-align: center;
   gap: 7px;
 }
 
-.section-1 .about p,
+#section-1 p,
 #section-2 p {
   font-size: 14px;
   margin: 5px;
 }
 
-.section-1,
+#section-1,
 #section-2 {
   color: var(--primary-color);
 }
@@ -57,14 +57,15 @@
 #section-2 h3 {
   margin: 8px;
 }
-.about > h3,
+
+#about > h3,
 #section-2 h3 {
   position: relative;
   padding: 12px;
   margin-bottom: 2px;
 }
 
-.about > h3::after,
+#about > h3::after,
 #section-2 h3::after {
   content: "";
   height: 1px;
@@ -196,7 +197,8 @@
   .agenda > div > div {
     margin: 0;
   }
-  .section-1 .about {
+
+  #section-1 .about {
     width: 45%;
   }
 

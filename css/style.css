@@ -433,7 +433,7 @@ hr {
   font-size: 11px;
 }
 
-#base-footer img {
+#base-footer > ul > li img {
   width: 40px;
   height: auto;
 }
