@@ -332,8 +332,7 @@ hr {
 
 #speaker > div > img {
   width: 100%;
-  box-sizing: border-box;
-  height: 95px;
+  height: auto;
 }
 
 #speaker h3 {
@@ -712,11 +711,6 @@ hr {
   #speaker {
     width: 100%;
     margin: 20px auto;
-  }
-
-  #speaker > div > img {
-    width: 100%;
-    height: 100%;
   }
 
   #speaker p {
