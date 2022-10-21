@@ -518,7 +518,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 190px 15px 190px;
+    padding: 35px 190px 15px 190px;
     left: 0;
     width: 100%;
     z-index: 3;
