@@ -158,6 +158,10 @@
     gap: 5px;
   }
 
+  #showcase {
+    margin-top: 50px;
+  }
+
   #showcase h1 {
     text-align: center;
   }
