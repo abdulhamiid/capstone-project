@@ -77,7 +77,7 @@ const btn = document.querySelector('.btn-more');
 btn.addEventListener('click', () => {
   btn.classList.toggle('show');
   if (btn.classList.contains('show')) {
-    btn.innerHTML = 'HIDE <i class="bi bi-chevron-up"></i>';
+    btn.innerHTML = 'LESS <i class="bi bi-chevron-up"></i>';
   } else {
     btn.innerHTML = 'MORE <i class="bi bi-chevron-down"></i>';
   }
