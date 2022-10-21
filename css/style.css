@@ -176,6 +176,8 @@ li {
 
 #showcase small {
   font-size: 14px;
+  height: 30px;
+  gap: 3px;
   margin: 10px 0;
 }
 
@@ -463,8 +465,7 @@ hr {
 }
 
 .dsk,
-.logo,
-.hr {
+.logo {
   display: none;
 }
 
@@ -484,7 +485,6 @@ hr {
   }
 
   .dsk,
-  .hr,
   .logo {
     display: block;
   }

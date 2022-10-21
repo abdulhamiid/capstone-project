@@ -12,6 +12,10 @@
   text-align: center;
 }
 
+#showcase small {
+  text-decoration: underline;
+}
+
 #showcase .title {
   margin-top: 20px;
 }
@@ -59,6 +63,7 @@
 }
 
 #about > h3,
+#section-1 h3,
 #section-2 h3 {
   position: relative;
   padding: 12px;
@@ -66,6 +71,7 @@
 }
 
 #about > h3::after,
+#section-1 h3::after,
 #section-2 h3::after {
   content: "";
   height: 1px;
@@ -129,6 +135,12 @@
   width: 50px;
 }
 
+.hr {
+  width: 100%;
+  background-color: var(--ash-color);
+  margin: 50px 0;
+}
+
 @media (min-width: 768px) {
   h1 {
     text-align: center;
@@ -184,12 +196,6 @@
 
   #section-1 .about {
     width: 45%;
-  }
-
-  .hr {
-    width: 100%;
-    background-color: var(--ash-color);
-    margin: 50px 0;
   }
 
   .box {
