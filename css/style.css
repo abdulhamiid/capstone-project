@@ -26,6 +26,10 @@ body {
   font-size: 13px;
 }
 
+.italic {
+  font-style: italic;
+}
+
 a {
   text-decoration: none;
   color: #272a31;
@@ -310,8 +314,7 @@ hr {
 }
 
 #speaker > div > p {
-  font-size: 12px;
-  font-style: italic;
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -401,7 +404,8 @@ hr {
 @media (min-width: 768px) {
   .d-mobile,
   .menu,
-  .btn-more {
+  .btn-more,
+  .bi-x-lg::before {
     display: none;
   }
 
@@ -499,7 +503,7 @@ hr {
 
   .nav-list li {
     border-bottom: none;
-    padding: 0 30px;
+    padding: 0 17px;
   }
 
   .nav-list li:last-child {
