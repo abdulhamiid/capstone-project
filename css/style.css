@@ -121,7 +121,7 @@ li {
   text-decoration: none;
 }
 
-#showcase-area {
+.showcase {
   background-image: url(../images/suleymaniye-mosque.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -400,7 +400,8 @@ hr {
 
 @media (min-width: 768px) {
   .d-mobile,
-  .menu {
+  .menu,
+  .btn-more {
     display: none;
   }
 
@@ -409,12 +410,12 @@ hr {
     color: #ec5242;
   }
 
-  .dsk,
-  .logo {
+  .dsk {
     display: block;
   }
 
   .logo {
+    display: flex;
     text-decoration: none;
     color: var(--primary-color);
     gap: 5px;
@@ -422,6 +423,7 @@ hr {
 
   #top-bar,
   #main-nav {
+    position: relative;
     width: 100%;
     z-index: 3;
   }
@@ -445,21 +447,17 @@ hr {
     justify-content: space-between;
   }
 
-  /* .overlay > div{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 90%;
-    height: 70%;
-    margin: 0;
-    padding: 0;
-  } */
-
   .overlay {
     width: 100%;
     height: 100%;
     color: #272a31;
   }
+
+  .overlay > div{
+    width: 70%;
+    padding: 70px 0;
+    justify-content: center;
+}
 
   #main-section {
     margin-top: 0;
@@ -540,9 +538,9 @@ hr {
     height: 40px;
   }
 
-  /* #showcase-area {
+  .showcase {
     height: 100%;
-  } */
+  }
 
   h2 {
     font-size: 27px;
@@ -556,6 +554,10 @@ hr {
     font-size: 30px;
   }
 
+  .overlay > div p:last-child {
+    font-size: 16px;
+  }
+
   .overlay > div h1 {
     background-position: center right;
     font-size: 57px;
@@ -566,7 +568,7 @@ hr {
   }
 
   #media {
-    padding: 50px 0;
+    padding: 10px 0 40px 0;
   }
 
   #media h3 {
@@ -629,13 +631,6 @@ hr {
     margin: 0 30px 30px 30px;
   }
 
-  #bs-logo {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5px;
-  }
-
   .fb {
     width: 50px;
     margin-right: 35px;
@@ -650,7 +645,7 @@ hr {
   }
 
   #col-d {
-    width: 60%;
+    width: 70%;
     margin: 40px auto;
     display: grid;
     grid-template-columns: 49% 49%;
