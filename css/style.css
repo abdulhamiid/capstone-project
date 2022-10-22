@@ -300,13 +300,19 @@ hr {
   margin: 25px auto;
 }
 
-#speaker > div > img {
+#speaker img {
   width: 100%;
   height: auto;
 }
 
 #speaker h3 {
   font-size: 15px;
+}
+
+#speaker > div > p {
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.5;
 }
 
 #footer > div:first-child > p {
@@ -361,12 +367,6 @@ hr {
   margin-top: 30px;
 }
 
-#speaker > div > p {
-  font-size: 12px;
-  font-style: italic;
-  line-height: 1.5;
-}
-
 .social-media {
   flex-wrap: wrap;
 }
@@ -382,7 +382,7 @@ hr {
   padding: 30px 0;
 }
 
-#bs-footer img {
+#bs-footer > img {
   width: 40px;
   height: auto;
 }
@@ -441,6 +441,12 @@ hr {
     padding: 15px 0;
   }
 
+  .overlay > div {
+    width: 70%;
+    padding: 76px 0;
+    justify-content: center;
+  }
+
   #main-nav > div {
     width: 70%;
     margin: auto;
@@ -452,12 +458,6 @@ hr {
     height: 100%;
     color: #272a31;
   }
-
-  .overlay > div{
-    width: 70%;
-    padding: 70px 0;
-    justify-content: center;
-}
 
   #main-section {
     margin-top: 0;
@@ -522,7 +522,7 @@ hr {
     background-color: var(--primary-color);
   }
 
-  #top-bar > div ul {
+  #top-bar ul {
     width: 70%;
     padding: 4px 0;
     margin: auto;
@@ -560,7 +560,7 @@ hr {
 
   .overlay > div h1 {
     background-position: center right;
-    font-size: 57px;
+    font-size: 52px;
   }
 
   .overlay > div > .description {
