@@ -14,55 +14,58 @@
 <body>
   <header>
     <div id="top-bar" class="hide">
-      <ul>
-        <li class="flex"><a href="#"><i class="bi bi-facebook"></i></a></li>
-        <li class="flex"><a href="#"><i class="bi bi-twitter"></i></a></li>
-        <li class="flex"><a href="#">English</a></li>
-        <li class="flex"><a href="#">My page</a></li>
-        <li class="flex"><a href="#">Logout</a></li>
-      </ul>
+      <div>
+        <ul class="flex">
+          <li class="flex"><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li class="flex"><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li class="flex"><a href="#">English</a></li>
+          <li class="flex"><a href="#">My page</a></li>
+          <li class="flex"><a href="#">Logout</a></li>
+        </ul>
+      </div>  
+    </div>
+
+    <!-- hamburger menu for mobile -->
+    <div class="flex flex-column menu">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
     </div>
 
     <div id="main-nav">
-      <a href="index.html" class="logo">
-        <img src="./images/mssnlogo.png" alt="society_logo">
-        MSSN    
-      </a>
-      
-      <!-- hamburger menu for mobile -->
-      <div class="flex flex-column menu">
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
+      <div class="flex">
+        <a href="index.html" class="logo flex">
+          <img src="./images/mssnlogo.png" alt="society_logo">
+          <p>MSSN</p> 
+        </a>    
+        <nav class="nav-list hide">
+          <ul>
+            <li><a href="about.html" id="about">About</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Sponsor</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">CC Campaign</a></li>
+          </ul>
+  
+          <!-- mobile menu close button -->                
+          <div>
+            <i class="bi bi-x-lg"></i>
+          </div>
+        </nav>
       </div>
-      
-      <nav class="nav-list hide">
-        <ul>
-          <li><a href="about.html" id="about">About</a></li>
-          <li><a href="#">Program</a></li>
-          <li><a href="#">Register</a></li>
-          <li><a href="#">Sponsor</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">CC Campaign</a></li>
-        </ul>
-
-        <!-- mobile menu close button -->                
-        <div>
-          <i class="bi bi-x-lg"></i>
-        </div>
-      </nav>
     </div>
   </header>
 
   <main id="main-section">
-    <section class="showcase-area">
-      <div>
-        <div id="showcase">
+    <section class="showcase">
+      <div class="overlay">
+        <div class="flex flex-column">
           <div class="top-header">"Hello! Sharing World"</div>
           <h1>BDS CONFERENCE<br>MSSN B-ZONE 2022</h1>
           <p class="description">Knowledge is a tool for the ummah, invest your wealth with to build a beautiful future for the next genearation.</p>
           <h2>2022.12.24(Sat) ~ 1(Sun)</h2>
-          <small>@ University of Ibadan, Oyo state, Nigeria.</small>
+          <p class="small">@ University of Ibadan, Oyo state, Nigeria.</p>
         </div>
       </div>
     </section>
@@ -110,26 +113,19 @@
   </main>
 
   <footer id="footer">
-    <p>Partner</p>
-    <ul class="social-media flex">
-      <li><img src="./images/google-removebg-preview.png" alt="Picture of featured speakers"></li>
-      <li><img src="./images/airbnb-removebg-preview.png" alt="Picture of featured speakers"></li>
-      <li><img src="./images/mozilla-removebg-preview.png" alt="Picture of featured speakers"></li>
-      <li><img src="./images/microverse-removebg-preview.png" alt="Picture of featured speakers"></li>
-      <li><img src="./images/naver-removebg-preview.png" alt="Picture of featured speakers"></li>
-    </ul>
-    <div id="base-footer">
-      <ul class="flex">
-        <li id="bs-logo" class="flex flex-column">
-          <img src="./images/mssnlogo.png" alt="mssn_logo">
-          <small>MSSN BZONE</small>
-        </li>
-        <li>
-          <h6>Zonal Office:</h6>
-          <small>Al-halal Nursery & Primary School, Off Lagos/Ibadan Expressway,<br>Sanyo Area,           Ibadan, Oyo State.
-          Permanent Site: KM 30, Lagos/Ibadan Expressway</small>
-        </li>
+    <div>
+      <p>Partner</p>
+      <ul class="social-media flex">
+        <li><img src="./images/google-removebg-preview.png" alt="Picture of featured speakers"></li>
+        <li><img src="./images/airbnb-removebg-preview.png" alt="Picture of featured speakers"></li>
+        <li><img src="./images/mozilla-removebg-preview.png" alt="Picture of featured speakers"></li>
+        <li><img src="./images/microverse-removebg-preview.png" alt="Picture of featured speakers"></li>
+        <li><img src="./images/naver-removebg-preview.png" alt="Picture of featured speakers"></li>
       </ul>
+    </div>
+    <div id="bs-footer" class="flex">
+      <img src="./images/mssnlogo.png" alt="mssn_logo">
+      <p class="small">Al-halal Nursery & Primary School, Lagos/Ibadan Expressway</p>
     </div>
   </footer>
   <script src="javascript/main.js"></script>
