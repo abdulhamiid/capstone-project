@@ -107,6 +107,10 @@
   background-image: url(../images/ps.jpg);
 }
 
+.overlay > div {
+  padding-top: 76px;
+}
+
 .agenda > div > div {
   background-color: rgba(236, 82, 66, 0.8);
   justify-content: center;

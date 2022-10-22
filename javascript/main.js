@@ -62,7 +62,7 @@ function createSpeakers(prop) {
     <div><img src="${prop.image}" alt=""></div>
     <div>
     <h3>${prop.name}</h3>
-    <p class="color-secondary">${prop.about}</p>
+    <p class="color-secondary italic">${prop.about}</p>
     <hr>
     <p id="primary-text">${prop.description}</p>
     </div>
