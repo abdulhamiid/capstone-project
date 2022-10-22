@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Zen+Maru+Gothic&display=swap');
 @import url("https://fonts.cdnfonts.com/css/cocogoose");
 
-/* global styles */
 * {
   margin: 0;
   padding: 0;
@@ -14,18 +13,26 @@
   --ash-color: #d3d3d3;
 }
 
+.color-secondary {
+  color: var(--secondary-color);
+}
+
 body {
   font-family: 'Lato', sans-serif;
-  color: var(--secondary-color);
+  color: #272a31;
+}
+
+.small {
+  font-size: 13px;
 }
 
 a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: #272a31;
 }
 
-#primary-text {
-  color: var(--primary-color);
+#top-bar {
+  display: none;
 }
 
 .flex {
@@ -36,10 +43,6 @@ a {
 
 .flex-column {
   flex-direction: column;
-}
-
-#active {
-  font-weight: 600;
 }
 
 li {
@@ -58,25 +61,10 @@ li {
   overflow: hidden;
 }
 
-.container {
-  width: 90%;
-  margin: auto;
-  text-align: center;
-}
-
-/* navbar */
-#main-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 3;
-}
-
-/* hamburger menu */
 .menu {
   width: 30px;
   margin: 20px;
+  position: absolute;
   z-index: 1;
 }
 
@@ -84,7 +72,7 @@ li {
   width: 100%;
   height: 5px;
   margin: 2px 0;
-  background-color: var(--primary-color);
+  background-color: #272a31;
 }
 
 .menu:hover,
@@ -93,11 +81,10 @@ li {
   cursor: pointer;
 }
 
-/* mobile nav list */
 .nav-list {
-  background-color: var(--primary-color);
+  background-color: #272a31;
   font-size: 20px;
-  padding: 60px 20px 60px 20px;
+  padding: 60px 20px;
   left: 0;
   top: 0;
   width: 100%;
@@ -119,30 +106,6 @@ li {
   width: 100%;
 }
 
-/* shocase section */
-.showcase-area {
-  background-image: url(../images/suleymaniye-mosque.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: auto;
-}
-
-.showcase-area > div {
-  background-color: rgba(255, 255, 255, 0.9);
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: var(--primary-color);
-  padding-top: 4.5rem;
-}
-
-#top-bar {
-  display: none;
-}
-
 .nav-list li {
   padding: 15px;
   border-bottom: 1px solid var(--secondary-color);
@@ -158,14 +121,25 @@ li {
   text-decoration: none;
 }
 
-#showcase {
-  display: flex;
-  flex-direction: column;
+#showcase-area {
+  background-image: url(../images/suleymaniye-mosque.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.overlay > div {
   padding: 15px 0;
-  text-align: left;
+  color: #272a31;
+  align-items: flex-start;
   width: 90%;
-  height: 70%;
   margin: auto;
+  height: 70%;
+  padding-top: 86px;
 }
 
 .top-header {
@@ -174,9 +148,7 @@ li {
   color: #ec5242;
 }
 
-#showcase small {
-  font-size: 14px;
-  height: 30px;
+.overlay > div p {
   gap: 3px;
   margin: 10px 0;
 }
@@ -195,11 +167,10 @@ h1 {
   -webkit-font-smoothing: antialiased;
 }
 
-#showcase .description {
+.overlay > div .description {
   font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
-  color: var(--primary-color);
   box-shadow: rgb(0 0 0 / 20%) 0 0 6px;
   padding: 15px;
   border: 3px solid #fff;
@@ -207,7 +178,7 @@ h1 {
   margin: 20px 0;
 }
 
-#showcase h2 {
+.overlay > div h2 {
   font-family: "cocogoose", "Arial", sans-serif;
   font-weight: 500;
   font-size: 23px;
@@ -220,7 +191,7 @@ h1 {
   background-position: center bottom;
   background-attachment: fixed;
   color: #f5f5f5;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 #media > ul {
@@ -241,7 +212,7 @@ h1 {
   text-align: left;
 }
 
-#media ul li i {
+#media > ul li i {
   font-size: 25px;
   color: #fff;
 }
@@ -273,6 +244,7 @@ hr {
 
 #media .title a {
   text-decoration: none;
+  color: #ec5242;
 }
 
 #media .description {
@@ -282,7 +254,7 @@ hr {
 
 #media .btn {
   padding: 20px;
-  background-color: var(--secondary-color);
+  background-color: #ec5242;
   color: #fff;
   text-decoration: none;
   width: 80%;
@@ -293,7 +265,7 @@ hr {
 }
 
 #cart h3 {
-  color: var(--primary-color);
+  color: #272a31;
 }
 
 #cart .btn {
@@ -318,8 +290,6 @@ hr {
   display: none;
 }
 
-/* speakers section */
-
 #speaker {
   display: grid;
   grid-template-columns: 30% 66%;
@@ -339,7 +309,7 @@ hr {
   font-size: 15px;
 }
 
-#footer p {
+#footer > div:first-child > p {
   color: var(--ash-color);
   padding-top: 20px;
   padding-bottom: 10px;
@@ -347,7 +317,7 @@ hr {
 
 #speakers-about > h3,
 #media > h3,
-#footer p {
+#footer > div:first-child > p {
   position: relative;
   padding: 12px;
   margin-bottom: 2px;
@@ -355,7 +325,7 @@ hr {
 
 #speakers-about > h3::after,
 #media > h3::after,
-#footer p::after {
+#footer > div:first-child > p::after {
   content: "";
   height: 1px;
   width: 30px;
@@ -373,11 +343,12 @@ hr {
   margin: 10px 0;
 }
 
-#speaker small {
-  font-size: 12px;
+#footer {
+  display: block;
+  width: 100%;
 }
 
-#footer {
+#footer > div:first-child {
   display: block;
   width: 100%;
   background-color: var(--primary-color);
@@ -390,7 +361,7 @@ hr {
   margin-top: 30px;
 }
 
-#speaker p {
+#speaker > div > p {
   font-size: 12px;
   font-style: italic;
   line-height: 1.5;
@@ -400,40 +371,18 @@ hr {
   flex-wrap: wrap;
 }
 
-#base-footer {
-  width: 100%;
-  background-color: #fff;
-  padding: 30px 0;
-}
-
-#bs-logo {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-items: center;
-  text-align: center;
-  gap: 4px;
-}
-
-#bs-logo small {
-  font-size: 12px;
-  font-weight: 600;
-}
-
-#base-footer ul {
+#bs-footer {
   width: 90%;
   display: flex;
   text-align: left;
   justify-content: center;
   gap: 50px;
   margin: auto;
+  background-color: #fff;
+  padding: 30px 0;
 }
 
-#base-footer small {
-  font-size: 11px;
-}
-
-#base-footer > ul > li img {
+#bs-footer img {
   width: 40px;
   height: auto;
 }
@@ -444,43 +393,20 @@ hr {
   margin: 0;
 }
 
-#show-more {
-  position: relative;
-  color: #fff;
-  padding-bottom: 1px;
-}
-
-#show-more::after {
-  content: "";
-  height: 1px;
-  width: 205px;
-  border-radius: 2px;
-  background: #fff;
-  transition: width 1s 5ms;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .dsk,
 .logo {
   display: none;
 }
 
 @media (min-width: 768px) {
-  nav {
-    width: 100%;
-    margin: auto;
-  }
-
   .d-mobile,
   .menu {
     display: none;
   }
 
-  #about {
-    color: var(--secondary-color);
+  #about,
+  a:hover {
+    color: #ec5242;
   }
 
   .dsk,
@@ -488,40 +414,56 @@ hr {
     display: block;
   }
 
-  a:hover {
-    color: var(--secondary-color);
-  }
-
   .logo {
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-decoration: none;
     color: var(--primary-color);
     gap: 5px;
   }
 
-  #top-bar {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
+  #top-bar,
+  #main-nav {
     width: 100%;
-    z-index: 7;
+    z-index: 3;
   }
 
-  /* navbar */
+  #top-bar {
+    display: block;
+    top: 0;
+    left: 0;
+  }
+
   #main-nav {
     background-color: #fff;
     box-shadow: 0 2px 4px var(--ash-color);
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 35px 190px 15px 190px;
-    left: 0;
+    padding: 15px 0;
+  }
+
+  #main-nav > div {
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  /* .overlay > div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 90%;
+    height: 70%;
+    margin: 0;
+    padding: 0;
+  } */
+
+  .overlay {
     width: 100%;
-    z-index: 3;
+    height: 100%;
+    color: #272a31;
+  }
+
+  #main-section {
+    margin-top: 0;
+    position: static;
   }
 
   .nav-list {
@@ -577,17 +519,16 @@ hr {
     text-decoration: none;
   }
 
-  #top-bar > ul {
+  #top-bar > div {
     width: 100%;
     background-color: var(--primary-color);
-    padding: 3px 180px;
-    display: flex;
-    justify-content: flex-end;
   }
 
-  #top-bar ul {
-    display: flex;
-    align-items: center;
+  #top-bar > div ul {
+    width: 70%;
+    padding: 4px 0;
+    margin: auto;
+    justify-content: flex-end;
   }
 
   #top-bar li {
@@ -599,34 +540,28 @@ hr {
     height: 40px;
   }
 
-  .showcase-area {
+  /* #showcase-area {
     height: 100%;
-  }
+  } */
 
   h2 {
     font-size: 27px;
-  }
-
-  #showcase {
-    margin-top: 80px;
-    padding-bottom: 60px;
-    width: 70%;
   }
 
   .top-header {
     font-size: 32px;
   }
 
-  #showcase p {
+  .overlay > div p {
     font-size: 30px;
   }
 
-  #showcase h1 {
+  .overlay > div h1 {
     background-position: center right;
     font-size: 57px;
   }
 
-  #showcase > .description {
+  .overlay > div > .description {
     width: 50%;
   }
 
@@ -638,7 +573,7 @@ hr {
     margin-bottom: 10px;
   }
 
-  #media ul {
+  #media > ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 3px;
@@ -657,8 +592,23 @@ hr {
     border: 2px solid #fff;
   }
 
-  .btn-more {
-    display: none;
+  #show-more {
+    position: relative;
+    color: #fff;
+    padding-bottom: 1px;
+  }
+
+  #show-more::after {
+    content: "";
+    height: 1px;
+    width: 205px;
+    border-radius: 2px;
+    background: #fff;
+    transition: width 1s 5ms;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   #media .btn {
