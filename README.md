@@ -18,7 +18,7 @@ To this project I have added :
 - JavaScript
 
 ### Live Demo
-[Click here](https://abdulhamiid.github.io/capstone-project/)
+[Click here](https://chipper-figolla-129338.netlify.app)
 
 ### Video presentation
 [Watch](https://www.loom.com/share/fbd0cd5669154c6ca6c16a706afd6227)
